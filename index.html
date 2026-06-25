@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kayala Thrinethra | MCA Student · Software & AI Engineer</title>
+  <meta name="description" content="Personal portfolio of Kayala Thrinethra — MCA Student, Software Engineer & AI enthusiast building innovative solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- ══════════ NAV ══════════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="1" y="1" width="20" height="20" rx="5" stroke="#7C3AED" stroke-width="1.5"/><path d="M6 11h10M11 6v10" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round"/></svg>
+    KT<span>.</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#achievements" onclick="closeMobile()">Achievements</a>
+  <a href="#education" onclick="closeMobile()">Education</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-inner">
+    <div class="hero-eyebrow reveal">Available for Internships &amp; Opportunities</div>
+    <h1 class="hero-name reveal reveal-delay-1">
+      <span class="grad-text">KAYALA</span><br>THRINETHRA
+    </h1>
+    <p class="hero-subtitle reveal reveal-delay-2">MCA Student &nbsp;·&nbsp; Software &amp; AI Engineer &nbsp;·&nbsp; India</p>
+    <p class="hero-summary reveal reveal-delay-3">
+      I am a driven Master of Computer Applications student passionate about software engineering, artificial intelligence, and database management. Combining strong foundations in OOP, DSA, and Relational Databases with modern AI engineering practices, I enjoy building innovative solutions that solve real-world problems.
+    </p>
+    <div class="hero-cta reveal reveal-delay-4">
+      <a href="#projects" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h8M2 12h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        View Projects
+      </a>
+      <a href="#contact" class="btn-outline">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 2H3a1 1 0 00-1 1v9a1 1 0 001 1h10a1 1 0 001-1V3a1 1 0 00-1-1z" stroke="currentColor" stroke-width="1.4"/><path d="M2 4l6 5 6-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        Contact Me
+      </a>
+    </div>
+    <div class="tech-badges reveal reveal-delay-5">
+      <span class="tech-badge">Python</span>
+      <span class="tech-badge">Java</span>
+      <span class="tech-badge">SQL</span>
+      <span class="tech-badge">PostgreSQL</span>
+      <span class="tech-badge">JavaScript</span>
+      <span class="tech-badge">HTML5</span>
+      <span class="tech-badge">CSS3</span>
+      <span class="tech-badge">OOP</span>
+      <span class="tech-badge">DSA</span>
+      <span class="tech-badge">AI Engineering</span>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about" class="section">
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="orbit-ring"><div class="orbit-dot"></div></div>
+      <div class="orbit-ring"><div class="orbit-dot"></div></div>
+      <div class="orbit-ring"><div class="orbit-dot"></div></div>
+      <div class="orbit-center">🤖</div>
+    </div>
+    <div class="about-content">
+      <div class="section-label reveal">01 — About</div>
+      <h2 class="section-title reveal reveal-delay-1">About <span class="grad-text">Me</span></h2>
+      <p class="about-text reveal reveal-delay-2">
+        I am currently pursuing my <strong style="color:#E2E8F0">Master of Computer Applications (MCA)</strong> at Narayana Engineering College, Nellore, continuously expanding my expertise in software development, artificial intelligence, database systems, and modern engineering practices.
+      </p>
+      <p class="about-text reveal reveal-delay-3" style="margin-bottom:28px">
+        I thrive at the intersection of theory and application — from crafting clean backend logic to exploring the frontiers of AI. Beyond the screen, I'm fascinated by Formula 1 technology and high-performance engineering, which feeds my love of precision and innovation.
+      </p>
+      <div class="interest-tags reveal reveal-delay-4">
+        <span class="interest-tag">🧠 Artificial Intelligence</span>
+        <span class="interest-tag">⚙️ Software Engineering</span>
+        <span class="interest-tag">🌐 Data Engineering</span>
+        <span class="interest-tag">🗄️ Database Systems</span>
+        <span class="interest-tag">🏎️ Formula 1 Technology</span>
+        <span class="interest-tag">🚀 Emerging Technologies</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills" class="section">
+  <div class="max-w">
+    <div style="text-align:center;margin-bottom:56px">
+      <div class="section-label reveal">02 — Skills</div>
+      <h2 class="section-title reveal reveal-delay-1">Technical <span class="grad-text">Expertise</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="glass skill-card reveal">
+        <div class="skill-card-icon" style="background:rgba(124,58,237,0.15);color:#A78BFA">💻</div>
+        <h3>Programming Languages</h3>
+        <div class="skill-item">
+          <div class="skill-label"><span>Python</span><span>90%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>Java</span><span>78%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>C</span><span>72%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="72"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>SQL (PostgreSQL)</span><span>88%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+      </div>
+      <div class="glass skill-card reveal reveal-delay-1">
+        <div class="skill-card-icon" style="background:rgba(56,189,248,0.12);color:#38BDF8">🌐</div>
+        <h3>Web Technologies</h3>
+        <div class="skill-item">
+          <div class="skill-label"><span>HTML5</span><span>85%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>CSS3</span><span>80%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>JavaScript</span><span>75%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div>
+        </div>
+      </div>
+      <div class="glass skill-card reveal reveal-delay-2">
+        <div class="skill-card-icon" style="background:rgba(236,72,153,0.12);color:#F472B6">🧩</div>
+        <h3>Concepts &amp; Methodologies</h3>
+        <div class="skill-item">
+          <div class="skill-label"><span>OOP</span><span>85%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>Data Structures &amp; Algorithms</span><span>80%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>Agile Development</span><span>70%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="70"></div></div>
+        </div>
+      </div>
+      <div class="glass skill-card reveal reveal-delay-3">
+        <div class="skill-card-icon" style="background:rgba(52,211,153,0.12);color:#34D399">🗄️</div>
+        <h3>Databases</h3>
+        <div class="skill-item">
+          <div class="skill-label"><span>PostgreSQL</span><span>88%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label"><span>RDBMS Concepts</span><span>85%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects" class="section">
+  <div class="max-w">
+    <div style="text-align:center;margin-bottom:56px">
+      <div class="section-label reveal">03 — Projects</div>
+      <h2 class="section-title reveal reveal-delay-1">Featured <span class="grad-text">Work</span></h2>
+    </div>
+    <div class="projects-grid">
+      <div class="glass project-card reveal">
+        <div class="project-number">PROJECT — 01</div>
+        <h3>AI Jarvis Voice Assistant</h3>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">JavaScript</span>
+          <span class="tech-pill">HTML</span>
+          <span class="tech-pill">CSS</span>
+        </div>
+        <p class="project-desc">
+          Developed an interactive AI-powered desktop voice assistant capable of processing user voice commands and launching web applications like Google and YouTube through voice interaction. Designed a clean, intuitive UX while implementing efficient command processing.
+        </p>
+        <ul class="feature-list">
+          <li>Voice Recognition</li>
+          <li>Application Launcher</li>
+          <li>Interactive UI</li>
+          <li>AI Command Processing</li>
+        </ul>
+      </div>
+      <div class="glass project-card reveal reveal-delay-1">
+        <div class="project-number">PROJECT — 02</div>
+        <h3>Student Grade Management System</h3>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+        </div>
+        <p class="project-desc">
+          Built a student management application for maintaining student records, calculating grades, tracking academic performance, and organizing data efficiently through structured program logic and clean data processing pipelines.
+        </p>
+        <ul class="feature-list">
+          <li>Record Management</li>
+          <li>Grade Calculation</li>
+          <li>Performance Tracking</li>
+          <li>Data Processing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ACHIEVEMENTS ══════════ -->
+<section id="achievements" class="section">
+  <div class="max-w">
+    <div style="text-align:center;margin-bottom:56px">
+      <div class="section-label reveal">04 — Achievements</div>
+      <h2 class="section-title reveal reveal-delay-1">Certifications &amp; <span class="grad-text">Recognition</span></h2>
+    </div>
+    <div class="glass achievement-spotlight reveal">
+      <div class="ach-badge">⭐ HackerRank Certification</div>
+      <div class="ach-stars">★★★★★</div>
+      <h3>SQL Gold Badge <span style="color:#FCD34D">— 5 Star</span></h3>
+      <p style="margin-top:16px">
+        Achieved the highest SQL proficiency tier on HackerRank by solving advanced database challenges involving complex queries, multi-table joins, aggregations, window functions, and query optimisation techniques — demonstrating production-level database engineering skills.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EDUCATION ══════════ -->
+<section id="education" class="section">
+  <div class="max-w">
+    <div style="text-align:center;margin-bottom:56px">
+      <div class="section-label reveal">05 — Education</div>
+      <h2 class="section-title reveal reveal-delay-1">Academic <span class="grad-text">Background</span></h2>
+    </div>
+    <div class="glass edu-card reveal">
+      <div class="edu-icon-wrap">🎓</div>
+      <div class="edu-content">
+        <h3>Master of Computer Applications (MCA)</h3>
+        <div class="inst">Narayana Engineering College, Nellore</div>
+        <div class="year">Expected Graduation — 2027</div>
+        <ul class="edu-highlights">
+          <li>Software Engineering Principles</li>
+          <li>Database Systems</li>
+          <li>Technical Project Development</li>
+          <li>Academic Excellence</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ INTERESTS ══════════ -->
+<section id="interests" class="section">
+  <div class="max-w">
+    <div style="text-align:center;margin-bottom:56px">
+      <div class="section-label reveal">06 — Interests</div>
+      <h2 class="section-title reveal reveal-delay-1">What <span class="grad-text">Drives Me</span></h2>
+    </div>
+    <div class="interests-grid">
+      <div class="glass interest-card reveal"><span class="interest-emoji">🧠</span><h4>Artificial Intelligence</h4></div>
+      <div class="glass interest-card reveal reveal-delay-1"><span class="interest-emoji">⚙️</span><h4>Software Development</h4></div>
+      <div class="glass interest-card reveal reveal-delay-2"><span class="interest-emoji">🌊</span><h4>Data Engineering</h4></div>
+      <div class="glass interest-card reveal reveal-delay-3"><span class="interest-emoji">🏎️</span><h4>Formula 1 Racing</h4></div>
+      <div class="glass interest-card reveal reveal-delay-4"><span class="interest-emoji">🚗</span><h4>Luxury Sports Car Engineering</h4></div>
+      <div class="glass interest-card reveal reveal-delay-5"><span class="interest-emoji">🔭</span><h4>Emerging Technologies</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact" class="section">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="section-label reveal">07 — Contact</div>
+      <h3 class="reveal reveal-delay-1">Let's Build<br><span class="grad-text">Something Great</span></h3>
+      <p class="reveal reveal-delay-2">
+        Open to internship opportunities, collaborations, and interesting projects. Feel free to reach out — I respond promptly.
+      </p>
+      <a href="mailto:thrinethrakayala@gmail.com" class="contact-link reveal reveal-delay-3">
+        <div class="contact-link-icon" style="background:rgba(124,58,237,0.15)">📧</div>
+        <div class="contact-link-text"><strong>Email</strong>thrinethrakayala@gmail.com</div>
+      </a>
+      <a href="https://www.linkedin.com/in/kayala-thrinethra-3652b4327" target="_blank" rel="noopener" class="contact-link reveal reveal-delay-4">
+        <div class="contact-link-icon" style="background:rgba(10,102,194,0.2)">💼</div>
+        <div class="contact-link-text"><strong>LinkedIn</strong>kayala-thrinethra</div>
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener" class="contact-link reveal reveal-delay-5">
+        <div class="contact-link-icon" style="background:rgba(255,255,255,0.06)">🐙</div>
+        <div class="contact-link-text"><strong>GitHub</strong>View Repositories</div>
+      </a>
+    </div>
+    <div class="glass" style="padding:36px 32px" id="contact-form-wrap">
+      <div class="contact-form" id="contact-form">
+        <div class="form-group reveal">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Jane Doe" autocomplete="off" />
+        </div>
+        <div class="form-group reveal reveal-delay-1">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="jane@example.com" autocomplete="off" />
+        </div>
+        <div class="form-group reveal reveal-delay-2">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Hi Thrinethra, I'd love to discuss…"></textarea>
+        </div>
+        <button class="btn-primary reveal reveal-delay-3" onclick="submitForm()" style="width:100%;justify-content:center;margin-top:4px">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="form-success" id="form-success">
+        ✅ &nbsp; Message sent! I'll get back to you soon.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="footer-name">KAYALA THRINETHRA</div>
+  <div class="footer-tagline">Building the future through Software Engineering and Artificial Intelligence.</div>
+  <div class="footer-divider"></div>
+  <div class="footer-copy">© 2026 &nbsp;·&nbsp; All rights reserved</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
