@@ -2,11 +2,6 @@
 
 Welcome to the repository for my personal portfolio website! This project serves as a digital hub to showcase my skills, projects, and experiences as a software developer and student.
 
-
-
-## 🚀 Live Demo
-You can view the live website here: **[Insert Your Live Vercel/GitHub Pages Link Here]**
-
 ---
 
 ## ✨ Features
